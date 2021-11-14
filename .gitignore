@@ -1,0 +1,5 @@
+.idea/
+target/
+axis.log
+.DS_Store
+output
