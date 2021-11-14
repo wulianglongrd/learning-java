@@ -6,7 +6,14 @@
 
     <groupId>cn.logx.learning</groupId>
     <artifactId>learning-java</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>java-basic</module>
+        <module>java-jvm</module>
+        <module>java-maven</module>
+        <module>java-string</module>
+    </modules>
 
 
 </project>
