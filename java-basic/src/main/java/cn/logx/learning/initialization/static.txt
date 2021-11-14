@@ -1,0 +1,2 @@
+## static
+- 全局函数的语义：使用static方法可以访问其它static方法和static域

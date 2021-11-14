@@ -8,6 +8,13 @@
     <artifactId>learning-java</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.encoding>UTF-8</project.build.encoding>
+    </properties>
+
     <modules>
         <module>java-basic</module>
         <module>java-jvm</module>
