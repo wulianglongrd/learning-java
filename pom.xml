@@ -20,6 +20,12 @@
         <module>java-jvm</module>
         <module>java-maven</module>
         <module>java-string</module>
+        <module>java-array</module>
+        <module>java-collection</module>
+        <module>java-generic</module>
+        <module>java-io</module>
+        <module>java-annotation</module>
+        <module>java-concurrency</module>
     </modules>
 
 

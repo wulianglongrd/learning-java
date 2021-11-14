@@ -1,4 +1,4 @@
-package cn.logx.learning.initialization;
+package cn.logx.learning.java.basic.initialization;
 
 
 class Mug {

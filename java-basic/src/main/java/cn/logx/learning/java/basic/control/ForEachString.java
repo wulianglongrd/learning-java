@@ -1,4 +1,4 @@
-package cn.logx.learning.control;
+package cn.logx.learning.java.basic.control;
 
 public class ForEachString {
 	public static void main(String[] args) {
