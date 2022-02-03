@@ -1,4 +1,4 @@
-package cn.logx.learning.java.concurrency.cn.logx.learning.java.concurrency.lock;
+package cn.logx.learning.java.concurrency.lock;
 
 /**
  * 死锁分析
