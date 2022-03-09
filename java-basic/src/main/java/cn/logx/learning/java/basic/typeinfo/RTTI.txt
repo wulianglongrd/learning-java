@@ -1,0 +1,3 @@
+RTTI: run-time type identification 运行时类型识别
+
+在java中，所有的类型转换都是在运行时进行正确性检查的。
