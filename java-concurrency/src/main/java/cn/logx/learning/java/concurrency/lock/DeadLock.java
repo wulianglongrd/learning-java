@@ -1,4 +1,4 @@
-package cn.logx.learning.java.concurrency.cn.logx.learning.java.concurrency.lock;
+package cn.logx.learning.java.concurrency.lock;
 
 /**
  * 死锁：线程1等待线程2互斥持有的资源，而线程2也在等待线程1互斥持有的资源，两个线程都无法继续执行
