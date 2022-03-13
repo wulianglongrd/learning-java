@@ -54,3 +54,16 @@ public class ClassInitialization {
 		System.out.println(Initable3.staticNonFinal);
 	}
 }
+/*
+After creating Initable ref
+47
+Initializing Initable
+258
+--------- END 1 ---------
+Initializing Initable2
+47
+--------- END 2 ---------
+Initializing Initable3
+After creating Initable3 ref
+74
+ */
