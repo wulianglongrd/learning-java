@@ -1,0 +1,13 @@
+JVM参数语法
+-XX:+<option> 开启option选项
+-XX:-<option> 关闭option选项
+-XX:<option>=<value> 将option选项的值设置为value
+
+在IDEA如何设置？
+run 按钮前 > edit configurations > VM options ，填入 "-XX:+TraceClassLoading"
+
+
+1. 追踪类的加载信息，并打印出来
+-XX:+TraceClassLoading
+
+2.

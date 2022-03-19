@@ -1,0 +1,13 @@
+反编译
+javap -c foo.bar.Demo
+
+
+助记符：
+ldc: 表示将int、float、string类型的常量值从常量池中推送至栈顶
+
+bipush：表示将单字节(-128~127)的常量值推送至栈顶
+
+sipush: 表示将短整形常量值(-32768~32767)推送至栈顶
+
+iconst_1: 表示将int类型的数字1推送至栈顶(iconst_m1 ~ iconst_5) (m1即-1 )
+
