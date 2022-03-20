@@ -77,7 +77,7 @@ java程序对类的使用方式可分为两种
 - 若最顶层的父类加载器无法加载类，则会返回把加载任务交给直接子类，若直接子类仍无法加载，则会继续把加载任务交给子类
   （自顶向下尝试加载类）
 - 若子类加载成功，则会直接返回加载成功。若最低层的加载器也加载不成功，则宣告类加载失败
-上面描述的加载流程，称为双亲委托机制(parent delegation)
+上面描述的加载流程，称为双亲委托机制(parent delegate) @see ClassLoader#loadClass(String name, boolean resolve)
 
 
 
