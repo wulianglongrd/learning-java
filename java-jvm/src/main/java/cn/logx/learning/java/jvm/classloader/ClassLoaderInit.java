@@ -1,7 +1,7 @@
 package cn.logx.learning.java.jvm.classloader;
 
 /**
- * 系统ClassLoader加载类，不会导致初始化
+ * 系统ClassLoader#loadClass 加载类不属于主动使用，不会导致初始化
  * Class.forName 属于主动调用，会触发初始化
  */
 public class ClassLoaderInit {
