@@ -11,7 +11,8 @@ public class StaticInit2 {
 }
 
 /**
- * 子类初始化，则父类也会被始化
+ * 子类初始化，会先初史化父类（如果父类是一个接口，不会初始化）
+ * 反之：如果父类初始化，子类不会初始化
  */
 class Parent2 {
 	public static int b = 2;

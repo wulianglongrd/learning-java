@@ -1,7 +1,15 @@
 package cn.logx.learning.java.jvm.classloader;
 
 /**
- * @see ClassLoader description
+ * <p> <tt>Class</tt> objects for array classes are not created by class
+ * loaders, but are created automatically as required by the Java runtime.
+ * The class loader for an array class, as returned by {@link
+ * Class#getClassLoader()} is the same as the class loader for its element
+ * type; if the element type is a primitive type, then the array class has no
+ * class loader.
+ *
+ *
+ * @see ClassLoader description learn more
  */
 public class ArrayClassLoader {
 	public static void main(String[] args) {
@@ -15,6 +23,8 @@ public class ArrayClassLoader {
 
 		System.out.println("-------------------");
 
+		// if the element type is a primitive type, then the array class has no
+		// class loader.
 		int[] ints = new int[2];
 		System.out.println(ints.getClass().getClassLoader());
 	}

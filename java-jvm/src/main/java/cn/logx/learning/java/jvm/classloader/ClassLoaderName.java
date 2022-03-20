@@ -1,10 +1,16 @@
 package cn.logx.learning.java.jvm.classloader;
 
+/**
+ * Returns the class loader for the class.  Some implementations may use
+ * null to represent the bootstrap class loader. This method will return
+ * null in such implementations if this class was loaded by the bootstrap
+ * class loader.
+ *
+ * @see Class#getClassLoader description
+ */
 public class ClassLoaderName {
 	public static void main(String[] args) throws ClassNotFoundException {
-		/**
-		 * @see getClassLoader description
-		 */
+
 		Class<?> clazz1 = Class.forName("java.lang.String");
 		System.out.println(clazz1.getClassLoader());
 

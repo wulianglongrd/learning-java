@@ -35,7 +35,7 @@ class Demo {
 class Demo2 {
 
 	/**
-	 * 当一个常量的值并非编译期就可以确定的时，那么期值不会放到调用类的常量池中
+	 * 当一个常量的值并非编译期就可以确定的时，那么其值不会放到调用类的常量池中
 	 */
 	public static final String str = UUID.randomUUID().toString();
 

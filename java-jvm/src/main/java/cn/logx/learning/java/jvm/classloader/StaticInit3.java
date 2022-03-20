@@ -18,6 +18,9 @@ public class StaticInit3 {
 	}
 }
 
+/**
+ * 初始化顺序： 静态代码块 > 实例代码块 > 构造方法
+ */
 class Parent3 {
 	static int a = 1;
 	{
@@ -26,6 +29,10 @@ class Parent3 {
 
 	static {
 		System.out.println("Parent3 static block");
+	}
+
+	public Parent3() {
+		System.out.println("Parent3 constructor block");
 	}
 }
 
@@ -41,6 +48,7 @@ StaticInit3 static block
 ---------
 Parent3 static block
 Parent block
+Parent3 constructor block
 ---------
 1
 ---------
