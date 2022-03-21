@@ -1,5 +1,7 @@
 package cn.logx.learning.java.jvm.classloader;
 
+import java.util.Random;
+
 /**
  a. 在初始化一个类时，并不会先初始化它所实现的接口
  b. 在初始化一个接口时，并不会先初始化它的父接口
@@ -10,15 +12,27 @@ public class InterfaceInit {
 		System.out.println(Child1.a);
 		System.out.println("----------------");
 		System.out.println(Parent1.b);
+		System.out.println("----------------");
+		System.out.println(Parent1.foo);
 	}
 }
 
 interface Parent1 {
 	public static int b = 1;
+
+	public static int foo = new Random().nextInt();
+
 	// 不会输出，证明没有被初始化
 	public static Thread thread = new Thread() {
+
 		{
-			System.out.println("Parent1 init");
+			System.out.println("bar");
+			this.start();
+		}
+
+		@Override
+		public void run() {
+			System.out.println("foo");
 		}
 	};
 }
